@@ -8,14 +8,14 @@ A web extension to nag you about tagging zendesk tickets:
 
 Clone this repository, then:
 
-### Firefox
+### Firefox
 
 * Visit `about:debugging`
 * Select "This Firefox"
 * Click "Load Temporary Add-on..."
 * Select the manifest file from your clone of this repo
 
-### Chrome
+### Chrome
 
 * Navigate to chrome://extensions
 * Enable developer mode with the switch in the top right corner
