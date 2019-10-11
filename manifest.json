@@ -1,0 +1,15 @@
+{
+  "description": "Checks to see if the list of tags in a Zendesk ticket has a GOV.UK PaaS category. Colours the border of the tagging field red if not, and adds a link to the taxonomy.",
+  "manifest_version": 2,
+  "name": "paas-zendesk-tag-reminder",
+  "version": "1.0",
+  "homepage_url": "https://github.com/richardtowers/paas-zendesk-tag-reminder",
+  "icons": {},
+  "content_scripts": [
+    {
+      "matches": ["https://govuk.zendesk.com/agent/tickets/*"],
+      "js": ["tag-reminder.js"]
+    }
+  ]
+
+}
