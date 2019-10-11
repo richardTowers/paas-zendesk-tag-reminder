@@ -22,7 +22,7 @@ setInterval(() => {
     if (paasTaxonomyTags.length === 0) {
       tagMenu.style = 'border: 2px solid red'
       tagMenu.parentElement.appendChild(errorMessage)
-    } else {
+    } else if (errorMessage.parentElement) {
       tagMenu.style = ''
       errorMessage.parentElement.removeChild(errorMessage)
     }
