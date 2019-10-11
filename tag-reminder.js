@@ -14,7 +14,7 @@ errorMessage.appendChild(document.createTextNode('This ticket needs a tag. See '
 errorMessage.appendChild(linkToTeamManual)
 
 setInterval(() => {
-  const tagMenu = document.querySelector('[data-test-id="ticket-fields-tags"] .zd-tag-menu-root')
+  const tagMenu = [...document.querySelectorAll('[data-test-id="ticket-fields-tags"] .zd-tag-menu-root')].find(x => x.offsetParent !== null)
   if (tagMenu) {
     const tags = [...tagMenu.querySelectorAll('.zd-tag-item a')].map(x => x.innerText)
     const paasTags = tags.filter(tag => /^govuk_paas_/.test(tag))
